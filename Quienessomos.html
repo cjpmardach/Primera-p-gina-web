@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CARSA BIKER</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="img/img4.jpg" type="img/jpg">
+     <style>
+        body {
+            background-image: url(img/img4.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .elemento{
+            padding: 50px;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.7) 0%, rgba(118, 75, 162, 0.7) 100%);
+            z-index: -1;
+        }
+
+        .content-wrapper {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .moto-background {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0.2;
+            z-index: 1;
+            width: 650px;
+            height: 450px;
+            background-image: url(img/img4.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 15px;
+        }
+
+        .texto-principal {
+            background: linear-gradient(145deg, #ff6b6b, #ffa726);
+            color: #2c3e50;
+            padding: 45px 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            max-width: 750px;
+            text-align: left;
+            z-index: 2;
+            position: relative;
+            border: 3px solid #34495e;
+            backdrop-filter: blur(2px);
+            margin-bottom: 100px;
+        }
+
+        .main-title {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 10;
+        }
+
+        h1 {
+            color: #ffd700 !important;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .btn-servicios {
+            background: linear-gradient(45deg, #e74c3c, #f39c12);
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50px;
+            box-shadow: 0 8px 20px rgba(231, 76, 60, 0.4);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-servicios:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(231, 76, 60, 0.6);
+            background: linear-gradient(45deg, #c0392b, #d68910);
+            color: white;
+            text-decoration: none;
+        }
+
+        .btn-servicios:active {
+            transform: translateY(0px);
+        }
+
+    </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <center>
+      <div class="main-title">
+        <h1 class="text-white">CARSA BIKER</h1>
+      </div>
+    </center>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><b>Carsa Biker</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Quienessomos.html"><b>Quiénes somos</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Servicios.html"><b>Servicios y productos</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galería.html"><b>Galería de imágenes</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Reseñas.html"><b>Reseñas</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contáctenos.html"><b>Contáctenos</b></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               <b>Novedades</b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="vendidos.html"><b>Más vendidas</b></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="descuentos.html"><b>Descuentos</b></a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+<div class="elemento">
+  <div class="content-wrapper">
+    <div class="moto-background"></div>
+    <div class="texto-principal">
+      <h5>En Carsa Biker vivimos y compartimos la pasión por las motos, dedicándonos a la venta, mantenimiento y personalización de motocicletas con el firme compromiso de ofrecer calidad, seguridad y estilo. Brindamos soluciones de movilidad modernas y eficientes que combinan tecnología, diseño y atención personalizada, asegurando que cada cliente reciba una experiencia única. Más que vender motos, creamos vínculos y momentos sobre dos ruedas, acompañando en todo el proceso: desde la elección del modelo ideal hasta su cuidado y mantenimiento, para que cada recorrido sea seguro, emocionante y lleno de satisfacción.</h5>
+      
+      <center>
+        <a href="Servicios.html" class="btn-servicios">
+          Conoce sobre nuestros servicios y productos
+        </a>
+      </center>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

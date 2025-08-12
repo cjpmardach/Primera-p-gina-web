@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CARSA BIKER</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="img/img4.jpg" type="img/jpg">
+     <style>
+        body {
+            background-image: url(img/img4.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        .elemento{
+            padding: 20px;
+        }
+        
+        /* Mejora simple del título */
+        .main-title {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .card {
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+                .btn {
+            margin: 5px;
+            transition: transform 0.2s ease;
+            border-radius: 25px;
+            padding: 10px 20px;
+            font-weight: 500;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .btn-primary {
+            box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+        }
+        
+        .btn-primary:hover {
+            box-shadow: 0 6px 16px rgba(0, 123, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+  <div class="container mt-5">
+    <center>
+      <div class="main-title">
+        <h1 class="text-white">Carsa Biker</h1>
+      </div>
+    </center>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><b>Carsa Biker</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Quienessomos.html"><b>Quiénes somos</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Servicios.html"><b>Servicios y productos</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galería.html"><b>Galería de imágenes</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Reseñas.html"><b>Reseñas</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contáctenos.html"><b>Contáctenos</b></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               <b>Novedades</b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="vendidos.html"><b>Más vendidas</b></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="descuentos.html"><b>Descuentos</b></a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-lg-4 col-md-6 elemento"> 
+        <div class="card bg-dark text-white">
+          <img src="img/img1.jpg" class="card-img-top" alt="Kawasaki Ninja H2R">
+          <div class="card-body">
+            <h5 class="card-title"><b>🏍Kawasaki Ninja H2R</b></h5>
+            <p class="card-text">La Kawasaki Ninja H2R es una superbike de competición con motor sobrealimentado de 998 cc. Produce más de 300 hp, lo que la convierte en una de las motos más potentes del mundo. Diseñada para pista, destaca por su aerodinámica avanzada, fibra de carbono y tecnología de vanguardia.</p>
+            <a href="fichah2r.pdf" class="btn btn-primary w-100">Ficha técnica</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 elemento"> 
+        <div class="card bg-dark text-white">
+          <img src="img/img2.jpg" class="card-img-top" alt="Kawasaki Ninja ZX-10R">
+          <div class="card-body">
+            <h5 class="card-title"><b>🏍Kawasaki Ninja ZX-10R</b></h5>
+            <p class="card-text">La Kawasaki Ninja ZX-10R es una moto deportiva de alto rendimiento, homologada para calle pero con alma de pista. Su motor de 998 cc y tecnología derivada del WSBK incluye control de tracción, suspensión electrónica y aerodinámica integrada.</p>
+            <a href="fichazx-10R.pdf" class="btn btn-primary w-100">Ficha técnica</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 elemento"> 
+        <div class="card bg-dark text-white">
+          <img src="img/img.jpg" class="card-img-top" alt="BMW S1000R">
+          <div class="card-body">
+            <h5 class="card-title"><b>🏍BMW S1000R</b></h5>
+            <p class="card-text">La BMW S1000R es una roadster deportiva que combina potencia y precisión alemana. Equipada con un motor derivado de la S 1000 RR (999 cc), ofrece 165 hp, control de tracción, modos de manejo y un diseño afilado ideal para carretera y circuito.</p>
+            <a href="FichaS1000R.pdf" class="btn btn-primary w-100">Ficha técnica</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 elemento"> 
+        <div class="card bg-dark text-white">
+          <img src="img/img13.jpg" class="card-img-top" alt="Kawasaki Z1000 R Edition">
+          <div class="card-body">
+            <h5 class="card-title"><b>🏍Kawasaki Z1000 R Edition</b></h5>
+            <p class="card-text">La Kawasaki Z1000 R Edition combina diseño agresivo con alto rendimiento. Cuenta con un motor de 1.043 cc de 4 cilindros y suspensión Öhlins trasera. Su frenado Brembo y electrónica refinada la hacen ideal para conducción deportiva urbana y carretera.</p>
+            <a href="fichaZ1000R.pdf" class="btn btn-primary w-100">Ficha técnica</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 elemento"> 
+        <div class="card bg-dark text-white">
+          <img src="img/img14.jpg" class="card-img-top" alt="Yamaha MT-09">
+          <div class="card-body">
+            <h5 class="card-title"><b>🏍Yamaha MT-09</b></h5>
+            <p class="card-text">La Yamaha MT-09 es una naked ágil y potente, equipada con un motor tricilíndrico de 890 cc. Ofrece aceleración explosiva, suspensión ajustable y un diseño moderno. Perfecta para pilotos que buscan diversión y control en cada curva.</p>
+            <a href="fichaMT09.pdf" class="btn btn-primary w-100">Ficha técnica</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 elemento d-flex align-items-center justify-content-center"> 
+        <a href="Descuentos.html" class="btn btn-primary">Observa nuestros descuentos</a>
+      </div>
+      
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

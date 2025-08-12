@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CARSA BIKER</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="img/img4.jpg" type="img/jpg">
+     <style>
+        body {
+            background-image: url(img/img4.jpg);
+            background-size: cover;
+        }
+                .main-title {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .elemento{
+            padding: 50px;
+        }
+        
+        .main-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            backdrop-filter: blur(10px);
+        }
+        
+        .table-title {
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .custom-table {
+            border-collapse: separate;
+            border-spacing: 0;
+            width: 100%;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 0 0 10px 10px;
+            overflow: hidden;
+        }
+        
+        .custom-table th {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            border: 2px solid #34495e;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            font-size: 1.1rem;
+        }
+        
+        .custom-table td {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 20px 15px;
+            text-align: center;
+            border: 2px solid #dee2e6;
+            font-weight: 600;
+            color: #2c3e50;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .custom-table td::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(76, 175, 80, 0.1), rgba(69, 160, 73, 0.1));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .custom-table tr:hover td::before {
+            opacity: 1;
+        }
+        
+        .custom-table tr:hover td {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .owner-name {
+            font-size: 1.1rem;
+            color: #1a237e;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-info {
+            font-size: 1rem;
+            color: #2e7d32;
+        }
+        
+        .document-number {
+            font-size: 1rem;
+            color: #d84315;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .email-link {
+            color: #1976d2;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            padding: 5px 8px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        
+        .email-link:hover {
+            color: #ffffff;
+            background: linear-gradient(45deg, #1976d2, #1565c0);
+            text-decoration: none;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
+        }
+
+        /* Estilos para el mapa */
+        .map-section {
+            margin-top: 30px;
+        }
+
+        .map-frame {
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+            border: 2px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <center>
+      <div class="main-title">
+        <h1 class="text-white">CARSA BIKER</h1>
+      </div>
+    </center>
+    
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><b>Carsa Biker</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Quienessomos.html"><b>Quiénes somos</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Servicios.html"><b>Servicios y productos</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galería.html"><b>Galería de imágenes</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Reseñas.html"><b>Reseñas</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contáctenos.html"><b>Contáctenos</b></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               <b>Novedades</b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="vendidos.html"><b>Más vendidas</b></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="descuentos.html"><b>Descuentos</b></a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+<div class="elemento">
+  <div class="main-container">
+    <div class="table-title">
+      📋 INFORMACIÓN DE PROPIETARIOS
+    </div>
+    
+    <table class="custom-table">
+      <thead>
+        <tr>
+          <th>👥 Propietarios</th>
+          <th>📱 Teléfono Celular</th>
+          <th>📧 Correo Electrónico</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class>Carlos Jesús Perea Mardach</td>
+          <td class>+57 3004525617</td>
+          <td><a href="https://mail.google.com/mail/?view=cm&fs=1&to=cjpmardach@gmail.com" target="_blank" class="email-link"> 
+           cjpmardach@gmail.com</a></td>
+        </tr>
+        <tr>
+          <td class>Samuel David Lobato Páez</td>
+          <td class=>+57 3012242316</td>
+          <td><a href="https://mail.google.com/mail/?view=cm&fs=1&to=samueldalopa26@gmail.com" target="_blank" class="email-link"> 
+           samueldalopa26@gmail.com</a></td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <div class="mt-4 text-center">
+      <small class="text-muted">
+        <i>📅 Información actualizada - 8 de Agosto 2025</i>
+      </small>
+    </div>
+
+
+    <div class="map-section">
+      <h4 class="text-center mb-3">📍 Nuestra Ubicación</h4>
+      
+      <div class="text-center mb-3">
+        <img src="img/img16.jpg" alt="I.E.T Francisco José De Caldas" class="img-fluid rounded" style="max-height: 200px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+        <p class="mt-2"><strong>I.E.T Francisco José De Caldas</strong></p>
+      </div>
+      
+      <iframe 
+        class="map-frame"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.294!2d-74.7957!3d10.9232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42d3b4c5e8c1d%3A0x6f8a7b9c5d3e2f1a!2sCalle%2030%20%2334a-124%2C%20Soledad%2C%20Atl%C3%A1ntico%2C%20Colombia!5e0!3m2!1ses!2sco!4v1691234567890!5m2!1ses!2sco"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+      <p class="text-center mt-2"><small>📍 Calle 30 #34a-124, I.E.T Francisco José De Caldas, Soledad, Atlántico - <a href="https://www.google.com/maps/search/Calle+30+34a-124+Soledad+Atlántico+Colombia" target="_blank">Ver en Google Maps</a></small></p>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

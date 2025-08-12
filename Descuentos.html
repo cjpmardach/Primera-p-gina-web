@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CARSA BIKER</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="img/img4.jpg" type="img/jpg">
+     <style>
+        body {
+            background-image: url(img/img4.jpg);
+            background-size: cover;
+        }
+
+        .main-title {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .ofertas-container {
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .ofertas-container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(255,255,255,0.1) 10px,
+                rgba(255,255,255,0.1) 20px
+            );
+            animation: shine 3s linear infinite;
+        }
+        
+        @keyframes shine {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+        
+        .ofertas-title {
+            color: white;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            position: relative;
+            z-index: 2;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <center>
+      <div class="main-title">
+        <h1 class="text-white">CARSA BIKER</h1>
+      </div>
+    </center>
+    
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><b>Carsa Biker</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Quienessomos.html"><b>Quiénes somos</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Servicios.html"><b>Servicios y productos</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galería.html"><b>Galería de imágenes</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Reseñas.html"><b>Reseñas</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contáctenos.html"><b>Contáctenos</b></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               <b>Novedades</b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="vendidos.html"><b>Más vendidas</b></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="descuentos.html"><b>Descuentos</b></a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="ofertas-container">
+      <h2 class="ofertas-title">🔥 OFERTAS IMPARABLES CARSABIKER 🔥</h2>
+      
+      <div class="row g-4">
+        <div class="col-lg-6 col-md-12">
+          <div class="card border-0 shadow-lg h-100">
+            <div class="card-header bg-danger text-white text-center">
+              <h5 class="mb-0"><strong>🏍 BMW S 1000 R</strong></h5>
+            </div>
+            <div class="card-body">
+              <span class="badge bg-warning text-dark mb-2">💥 -25% + CASCO GRATIS</span>
+              <p class="card-text">
+                <span class="text-decoration-line-through text-danger">Antes: $99.900.000</span><br>
+                <span class="fs-4 fw-bold text-success">Ahora: $74.925.000</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6 col-md-12">
+          <div class="card border-0 shadow-lg h-100">
+            <div class="card-header bg-primary text-white text-center">
+              <h5 class="mb-0"><strong>🏍 Kawasaki Ninja ZX-10R</strong></h5>
+            </div>
+            <div class="card-body">
+              <span class="badge bg-info text-dark mb-2">⚡ AHORRA $18.000.000</span>
+              <p class="mb-1">Kit de guantes + chaqueta de regalo</p>
+              <p class="card-text">
+                <span class="text-decoration-line-through text-danger">Antes: $88.000.000</span><br>
+                <span class="fs-4 fw-bold text-success">Ahora: $70.000.000</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6 col-md-12">
+          <div class="card border-0 shadow-lg h-100">
+            <div class="card-header bg-warning text-dark text-center">
+              <h5 class="mb-0"><strong>🏍 Yamaha MT-09</strong></h5>
+            </div>
+            <div class="card-body">
+              <span class="badge bg-danger mb-2">🔥 20% OFF</span>
+              <p class="mb-1">+ mantenimiento gratis por 1 año</p>
+              <p class="card-text">
+                <span class="text-decoration-line-through text-danger">Antes: $65.000.000</span><br>
+                <span class="fs-4 fw-bold text-success">Ahora: $52.000.000</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6 col-md-12">
+          <div class="card border-0 shadow-lg h-100">
+            <div class="card-header bg-dark text-white text-center">
+              <h5 class="mb-0"><strong>🏍 Kawasaki Ninja H2R</strong></h5>
+            </div>
+            <div class="card-body">
+              <span class="badge bg-success mb-2">🚀 EDICIÓN ESPECIAL</span>
+              <p class="mb-1">Descuento de $25.000.000 + envío gratis</p>
+              <p class="card-text">
+                <span class="text-decoration-line-through text-danger">Antes: $180.000.000</span><br>
+                <span class="fs-4 fw-bold text-success">Ahora: $155.000.000</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6 col-md-12">
+          <div class="card border-0 shadow-lg h-100">
+            <div class="card-header bg-secondary text-white text-center">
+              <h5 class="mb-0"><strong>🏍 Kawasaki Z1000 R Edition</strong></h5>
+            </div>
+            <div class="card-body">
+              <span class="badge bg-primary mb-2">⚡ 15% OFF</span>
+              <p class="mb-1">+ casco y guantes racing gratis</p>
+              <p class="card-text">
+                <span class="text-decoration-line-through text-danger">Antes: $72.000.000</span><br>
+                <span class="fs-4 fw-bold text-success">Ahora: $61.200.000</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6 col-md-12">
+          <div class="alert alert-light border-3 border-warning h-100 d-flex align-items-center">
+            <div class="text-center w-100">
+              <h4 class="text-dark mb-3">💣 Promoción válida hasta agotar existencias</h4>
+              <h5 class="text-dark">📍 Visítanos y estrena la moto de tus sueños hoy mismo</h5>
+              <button class="btn btn-warning btn-lg mt-3 pulse">¡Compra Ya!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
